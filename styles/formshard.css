@@ -1,0 +1,126 @@
+
+:root{
+    --primaire:  #4ecd5d;
+    --secundaire: rgb(0, 191, 255);
+    --third: capitalize;
+    --primairebuttons: 10px;
+    --secundairebuttons: 8px;
+
+
+
+}
+
+*{
+--box-sizing: border-box;
+--margin: 0;
+--padding: 0;
+
+
+}
+
+/* html{
+    
+} */
+
+/* body{} */
+
+
+.navbarforms img {
+    transform: scale(0.5);
+  }
+  
+ 
+
+.mainpart{
+    --background-color: rgb(251, 251, 253);
+    margin: var(--margin);
+    width: 800px;
+    border: 2px solid black;
+    padding: 15px;
+   font-style: var(--third);
+}
+/* 
+.demain{
+    background-color: rgb(251, 251, 253);
+    margin: var(--margin);
+    width: 800px;
+    border: 2px solid black;
+    padding: 15px;
+   font-style: var(--third);
+} */
+
+
+.test{
+ visibility: hidden;
+}
+
+.mainpart input, .demain input{
+        margin-bottom: 50px;
+
+    }
+    
+    
+p{
+        margin: 0;
+        color: var(--primaire)
+    }
+
+
+p, input{
+    
+    border-radius: var(--primairebuttons);
+    width: 20%;
+    justify-content: center;
+    color:var(--secundaire)
+
+}
+
+.push{
+    background-color: var(--primaire);
+    display: flex;
+    margin-top: 10%;
+    padding-top: 15px;
+    height: 50px;
+    width: 100px;
+    border-radius: var(--secundairebuttons);
+    text-align: center;
+    justify-content: center;
+    vertical-align: center;
+} 
+
+
+
+
+.regentonvol{
+  position: absolute;
+  width: 800px;
+  height: 200px;
+  border: 2px solid #000;
+  overflow: hidden;
+  
+}
+
+.watereffectvol {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: blue; 
+  overflow: hidden;
+  animation: loopwater 9s infinite; 
+}
+
+
+@keyframes loopwater {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%; 
+  }
+}
+
+.verstopt{
+    display: none;
+}
